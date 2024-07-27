@@ -1,21 +1,16 @@
-""" from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return 'Hello, World!'
-
-@app.route('/about')
-def about():
-    return 'About' """
-
 from flask import Flask, request, render_template, make_response
+from dotenv import load_dotenv
 import os
 from api.weather import get_weather
 
 app = Flask(__name__, static_folder="../static", template_folder="../templates")
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access your API key
+api_key = os.getenv('API_KEY')
 
 location = ""
 display = "none"
