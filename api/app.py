@@ -15,6 +15,7 @@ import os
 from api.weather import get_weather
 
 app = Flask(__name__, static_folder="../static", template_folder="../templates")
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 location = ""
 display = "none"
