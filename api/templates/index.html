@@ -19,21 +19,30 @@
   <div class="container pt-4" id="main_container">
     <!-- CONTENT -->
 
-    <!-- GET USER'S NAME -->
-    <form action='/set_name' method="POST">
-      <div class="input-group mx-auto w-75">
-        <div class="input-group-prepend border-0">
-          <span class="input-group-text rounded-0" id="basic-addon1">@</span>
+    <div class="container">
+      <div class="row">
+        <div class="col bg-danger">
+          <h1>get_weather()</h1>
         </div>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-          aria-describedby="basic-addon1" for="user_name" type="text" id="user_name" name="user_name">
-        <input class="btn btn-primary rounded-0 border-0 bg-dark" type="submit" value="Submit">
+        <!-- GET USER'S NAME -->
+        <div class="col bg-warning">
+          <form action='/set_name' method="POST">
+            <div class="input-group mx-auto">
+              <div class="input-group-prepend border-0">
+                <span class="input-group-text rounded-0" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                aria-describedby="basic-addon1" for="user_name" type="text" id="user_name" name="user_name">
+              <input class="btn btn-primary rounded-0 border-0 bg-dark" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        <!-- GET USER'S NAME -->
       </div>
-    </form>
-    <!-- GET USER'S NAME -->
+    </div>
 
     <div class="container-xl pt-3" style="width: 100%;">
-      <div class="row d-flex flex-wrap-reverse">
+      <div class="row d-flex flex-column-reverse">
         <!-- LEFT COLUMN -->
         <div class="col leftCol">
           <div class="jumbotron container-fluid p-4 mb-0 shadow-sm p-3 rounded appBG" style="height: 100%;">
