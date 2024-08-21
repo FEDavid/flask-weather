@@ -14,7 +14,6 @@ html, body {
 
 body{
     padding: 1.5rem 0 1.5rem 0;
-    min-width: 400px;
 }
 
 #main_container{
@@ -57,6 +56,10 @@ body{
     position: relative;
     left: 20px;
     width: calc(100% - 40px);
+}
+
+#weather_container{
+    width: 100%;
 }
 
 /* Breakpoints */
