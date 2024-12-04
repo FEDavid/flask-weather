@@ -1,9 +1,10 @@
 import requests
+import os
 
 degree_sign = u'\N{DEGREE SIGN}'
 
 def location_check(location):
-    api_key = "fe7a66faf837f159cc5fc11a4c1196dd"
+    api_key = os.getenv('API_KEY')
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = f"{base_url}appid={api_key}&q={location}"
     response = requests.get(complete_url)

@@ -64,10 +64,10 @@ body{
 
 /* Breakpoints */
 
-@media (min-width: 1200px) { 
+@media (min-width: 992px) { 
 
 #main_container{
-    width: 40%;
+    width: 50%;
 }
 
 #weather_card{
